@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+  
+    <link rel="stylesheet" href="style.css">
+   
+ 
+</head>
+
+<body>
+    <form id="registrationForm">
+        <div class="container">
+            <h1>Registration Form</h1>
+            <div class="container-box form-group">
+                <img src="Images/username.png">
+                <input type="text" placeholder="User Name" id="username">
+                <div class="error-message" id="usernameError"></div>
+            </div>
+            <div class="container-box form-group">
+                <img src="Images/maillogo.png">
+                <input type="mail" placeholder="Email ID" id="email">
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="container-box form-group">
+                <img src="Images/password.png">
+                <input type="password" id="password" placeholder="Password">
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <button id="submitbtn" type="submit">Submit</button>
+            <div class="overlay" id="overlay"></div>
+           
+
+        </div>
+    </form>
+    <div class="popup" id="popup">
+        <p>Registration is successful!</p>
+        <button id="closePopup" type="submit" onclick="closepop()">OK</button>
+      </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
